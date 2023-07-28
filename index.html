@@ -17,55 +17,110 @@
         height: 840px;
         }
         
-        @media (max-width:600px) {
-            .shouji{
-                align-items: end;
-            }
+        .flex-container{
+            display: flex;
+            flex-direction:column;
+            width: 600px;
+            height:300px;
+            background-color:rgb(97, 97, 97);
+            opacity:0.7;
         }
 
+        .flex-item{
+            background-color:lightgray;
+            width:300px;
+            height:200px;
+            margin:auto;
+        }
+
+        .flex{
+            display:flex;
+        }
+
+        /* 鼠标移动到选项上修改背景颜色 */
+        .flex-item:hover{
+            background-color: #6d6d6d;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #c7c7c7;
+        }
+        
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        /* 鼠标移动到选项上修改背景颜色 */
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+        div.img {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.img:hover {
+            border: 1px solid #777;
+        }
+
+        div.img img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
     </style>
 </head>
 <body style = "
-        margin:100px; 
+        margin:auto; 
         background-image:url('image/20220327091122_78e56.jpg') ;
-        background-color:white;
-        ">
+        background-color:white;"
+        class = 'flex;'>
+    <ul>
+        <li><a href="https://alextok404.github.io/Learning/first%20web.html">我的另一个网站</a></li>
+        <li><a href="https://alextok404.github.io/Learning/first%20web.html">点我^_^</a></li>
+    </ul>
+        <!-- 头像 -->
     <div  style = "
         text-align:center;
         height:100px;
-        margin:40px;
-    ">
-        <img src = 'image/Elaina.png' alt = 头像 width = 100px height = 100px 
-       style = "border-radius:50%;" class = "shouji">
-    </div>    
-    <div style = "
-        text-align:center;
-        letter-spacing:1px;"
-        class = "shouji"
-    >
-        <p style = "color:rgb(245, 147, 242)">我是Alex_Tok404.</p>
-        <p style = "color:rgb(245, 147, 242)">这是一个为你写的网页^_^</p>
-    </div>
-    <div style = "
-    text-align:center;
-    height:100px;
-    margin: 40px
-    ">
-        <a href = "https://alextok404.github.io/Learning/first%20web.html" style = "color:rgb(189, 5, 45)">点击此链接查看一个惊喜</a>
-    </div>
-    <div style = "
-        display:flex;
-    ">
-    </div>
-    <div  style = ' text-align:center;''>
+        margin:40px;"
+        class = 'flex;'>
 
-        <img src = 'image/小饶.jpg' alt = '小饶' width = 199.5px height = 256px>
-    <diblan style = "
-        text-align:center;
-        letter-spacing:1px;
-        font-size:10px;
-    ">
-        <p>end</p>
-    </diblan>
+        <img src = 'image/Elaina.png' alt = 头像 width = 100px height = 100px 
+       style = "border-radius:50%;">
+    </div>    
+    <!-- 描述 -->
+    <div class = 'flex-container' style = 'z-index: 1;'>
+
+        <div class = 'flex-item'>
+            <p style = "color:rgb(5, 5, 5)">
+                我是Alex_Tok404,这是一个为你写的网页.
+                此网页用于展示在下就花了几天完成的画作!(说实话，画得不太好看)
+                但是我还会努力的.^_^
+            </p>
+        </div> 
+    </div>
+    <div class="responsive">
+        <div class="img">
+          <a target="_blank" href="image/小饶.jpg">
+            <img src="image/小饶.jpg" alt="小饶" width="300" height="200">
+          </a>
+          <div class="desc" style = 'color:rgb(226,0,151)'>This is you</div>
+        </div>
+      </div>
 </body>
 </html>
