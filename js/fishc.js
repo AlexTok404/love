@@ -1,6 +1,6 @@
 // function([string1, string2],target id,[color1,color2])    
 //替换string1，string2，string3，为自己的内容；颜色项要匹配
-consoleText(['Hi Sweetie.<br/>这是个为你准备的页面', '爱你的ZRJ<br/> ^_^', '🧧🌹💗请收下'], 'text',['tomato','rebeccapurple','lightblue']);
+consoleText(['Hi Sweetie.<br/>这是个为你准备的页面', '爱你的Chalex_os<br/> ^_^', '🧧🌹💗请收下'], 'text',['tomato','rebeccapurple','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
